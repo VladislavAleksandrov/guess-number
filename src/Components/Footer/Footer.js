@@ -6,7 +6,7 @@ export const Footer = ({
 	                       wasGuesed,
 	                       isEqual,
 	                       isAbove,
-	                       restartGame
+	                       restartGame,
                        }) => {
 	return (
 		<footer className={s.box}>
