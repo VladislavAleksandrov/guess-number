@@ -1,7 +1,7 @@
+import s from './App.module.css'
 import {Header} from "./Components/Header/Header"
 import {Form} from "./Components/Form/Form"
 import {Footer} from "./Components/Footer/Footer"
-import s from './App.module.css'
 import {useEffect, useState} from "react"
 
 
@@ -33,6 +33,7 @@ function App() {
 	const changeInput = event => {
 		let value = event.target.value.replace(/[^0-9]/gi, "")
 		if (value > 100) setInputValue('100')
+		else if (value < 1) setInputValue('')
 		else setInputValue(value)
 	}
 
